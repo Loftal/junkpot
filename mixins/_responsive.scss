@@ -1,6 +1,9 @@
 @mixin generate-responsive-base($xs, $sm, $md, $lg) {
   $size_a: ( xs: $xs, sm: $sm, md: $md, lg: $lg );
   @each $size, $width in $size_a {
+    @if $size == xs {
+      $width: 0;
+    }
     @media (min-width: $width){
       @for $i from 1 through 12 {
         .#{$size}-#{$i} {

@@ -17,7 +17,7 @@
 .clearfix:after {
   clear: both; }
 
-@media (min-width: 480px) {
+@media (min-width: 0) {
   .xs-1 {
     width: 8.33333%;
     float: left; }
