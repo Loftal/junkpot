@@ -1,0 +1,42 @@
+$header-height: 60px;
+$header-p-top: 0px;
+$header-p-bottom: 10px;
+$header-b-width: 5px;
+$header-outer-height: $header-height + $header-p-top + $header-p-bottom + $header-b-width;
+
+$footer-height: 50px;
+$footer-p-top: 10px;
+$footer-p-bottom: 10px;
+$footer-b-width: 1px;
+$footer-outer-height: $footer-height + $footer-p-top + $footer-p-bottom + $footer-b-width;
+
+@include base-body($footer-outer-height){
+  //body
+  color: $main-font-color;
+  background-color: $main-bg-color;
+};
+
+@include base-header($header-height, $header-p-top, $header-p-bottom, $header-b-width){
+  //#header
+  background-color: $header-bg-color;
+  border-color: $header-border-color;
+  #navbar{
+    color: #FFF;
+    background-color: #000;
+  }
+  h1{
+    margin: 5px 0;
+    font-size: 25px;
+  }
+};
+
+@include base-contents($header-outer-height){
+  //#contents
+}
+
+@include base-footer($footer-height, $footer-p-top, $footer-p-bottom, $footer-b-width){
+  //#footer
+  background-color: $footer-bg-color;
+  border-color: $footer-border-color;
+  min-width: $container-outer-width;
+};

@@ -1,0 +1,13 @@
+@mixin generate-responsive-base($xs, $sm, $md, $lg) {
+  $size_a: ( xs: $xs, sm: $sm, md: $md, lg: $lg );
+  @each $size, $width in $size_a {
+    @media (min-width: $width){
+      @for $i from 1 through 12 {
+        .#{$size}-#{$i} {
+          width: 100% * ($i / 12);
+          float: left;
+        }
+      }
+    }
+  }
+}

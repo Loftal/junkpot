@@ -1,0 +1,44 @@
+@mixin base-body($footer-outer-height) {
+  html{
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0 0 $footer-outer-height;
+    padding: 0;
+    @content;
+  }
+}
+
+@mixin base-header($height, $p-top, $p-bottom, $b-width){
+  #header {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $height;
+    padding: $p-top 0 $p-bottom;
+    border-bottom: $b-width solid;
+    @content;
+  }
+}
+
+@mixin base-contents($header-outer-height){
+  #contents{
+    padding-top: $header-outer-height;
+    @content;
+  }
+}
+
+@mixin base-footer($height, $p-top, $p-bottom, $b-width){
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $height;
+    padding: $p-top 0 $p-bottom;
+    border-top: $b-width solid;
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+//@lineで指定した行数で折りたたみ
+@mixin line-wrap($line: 1){
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  text-overflow: ellipsis;
+}

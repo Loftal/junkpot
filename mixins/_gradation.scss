@@ -1,0 +1,8 @@
+@mixin bg-gradient ($top-color: #FFF, $bottom-color: #000){
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $top-color), color-stop(1, $bottom-color));
+  background-image: -o-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background-image: -moz-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background-image: -webkit-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background-image: -ms-linear-gradient(bottom, $top-color 0%, $bottom-color 100%);
+  background-image: linear-gradient(to bottom, $top-color 0%, $bottom-color 100%);
+}

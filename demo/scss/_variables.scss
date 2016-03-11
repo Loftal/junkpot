@@ -1,0 +1,27 @@
+// site color
+$main-color: #F00;
+$sub-color: #0F0;
+
+// layout color
+$main-font-color: #666;
+$main-bg-color: #FFF;
+$header-bg-color: #EFEFEF;
+$header-border-color: #AAA;
+$footer-bg-color: #aaa;
+$footer-border-color: #999;
+
+// site width
+$container-width: 960px;
+$container-padding-lr: 20px;
+$container-outer-width: $container-width + $container-padding-lr * 2;
+
+// elements color
+$link-text-color: #00F;
+
+// responsive
+// ex) @media (max-width: $xs){ }
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+@include generate-responsive-base($xs, $sm, $md, $lg);
