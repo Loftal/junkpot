@@ -10,7 +10,7 @@
 }
 
 @mixin vendor($property, $value){
-  $set-prefix: '' , -moz- , -webkit-;
+  $set-prefix: -o-, -ms- , -moz- , -webkit-, '';
   @each $prefix in $set-prefix{
     #{$prefix}#{$property}: $value;
   }

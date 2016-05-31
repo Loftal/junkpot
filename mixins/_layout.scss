@@ -17,7 +17,6 @@
     width: $container-width;
     margin: 0 auto;
     padding: 0 $container-padding-lr;
-    @include vendor(box-sizing, border-box);
     @include clearfix;
     @content;
   }
@@ -29,7 +28,6 @@
     top: 0;
     width: 100%;
     height: $header-height;
-    @include vendor(box-sizing, border-box);
     @content;
   }
 }
@@ -47,7 +45,6 @@
     bottom: 0;
     width: 100%;
     height: $footer-height;
-    @include vendor(box-sizing, border-box);
     @content;
   }
 }
