@@ -8,3 +8,10 @@
     clear: both;
   }
 }
+
+@mixin vendor($property, $value){
+  $set-prefix: '' , -moz- , -webkit-;
+  @each $prefix in $set-prefix{
+    #{$prefix}#{$property}: $value;
+  }
+}

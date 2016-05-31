@@ -1,16 +1,18 @@
-.container {
-  width: $container-width;
-  padding: 0 $container-padding-lr;
-  margin: auto;
-  @include clearfix;
-}
-
 a{
-  color: $link-text-color;
+  color: $link-color;
   text-decoration: none;
   &:hover{
     opacity: 0.7;
   }
+}
+.main{
+  color: $main-color;
+}
+.sub{
+  color: $sub-color;
+}
+.accent{
+  color: $accent-color;
 }
 .color-box {
   background-color: #cccccc;

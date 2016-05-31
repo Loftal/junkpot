@@ -1,22 +1,19 @@
 // site color
 $main-color: #F00;
 $sub-color: #0F0;
+$accent-color: #00F;
+$main-font-color: #333;
+$link-color: #8AA8EC;
 
-// layout color
-$main-font-color: #666;
-$main-bg-color: #FFF;
-$header-bg-color: #EFEFEF;
-$header-border-color: #AAA;
-$footer-bg-color: #aaa;
-$footer-border-color: #999;
-
-// site width
-$container-width: 960px;
+// layout size
+$header-height: 70px;
+$footer-height: 100px;
+$container-width: 1000px;
 $container-padding-lr: 20px;
-$container-outer-width: $container-width + $container-padding-lr * 2;
-
-// elements color
-$link-text-color: #00F;
+// layout color
+$body-bg-color: #fff;
+$header-bg-color: #eee;
+$footer-bg-color: #ccc;
 
 // responsive
 // ex) @media (max-width: $xs){ }

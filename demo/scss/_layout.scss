@@ -1,42 +1,32 @@
-$header-height: 60px;
-$header-p-top: 0px;
-$header-p-bottom: 10px;
-$header-b-width: 5px;
-$header-outer-height: $header-height + $header-p-top + $header-p-bottom + $header-b-width;
-
-$footer-height: 50px;
-$footer-p-top: 10px;
-$footer-p-bottom: 10px;
-$footer-b-width: 1px;
-$footer-outer-height: $footer-height + $footer-p-top + $footer-p-bottom + $footer-b-width;
-
-@include base-body($footer-outer-height){
+@include base-body($footer-height){
   //body
   color: $main-font-color;
-  background-color: $main-bg-color;
+  background-color: $body-bg-color;
+};
+@include base-container($container-width, $container-padding-lr){
+  //.container
 };
 
-@include base-header($header-height, $header-p-top, $header-p-bottom, $header-b-width){
+@include base-header($header-height){
   //#header
   background-color: $header-bg-color;
-  border-color: $header-border-color;
+  min-width: $container-width;
   #navbar{
     color: #FFF;
     background-color: #000;
   }
   h1{
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 };
 
-@include base-contents($header-outer-height){
+@include base-contents($header-height){
   //#contents
 }
 
-@include base-footer($footer-height, $footer-p-top, $footer-p-bottom, $footer-b-width){
+@include base-footer($footer-height){
   //#footer
   background-color: $footer-bg-color;
-  border-color: $footer-border-color;
-  min-width: $container-outer-width;
+  min-width: $container-width;
 };
