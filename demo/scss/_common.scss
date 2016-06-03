@@ -14,8 +14,13 @@ a{
 .accent{
   color: $accent-color;
 }
-.color-box {
-  background-color: #cccccc;
-  margin: 5px;
-  padding: 10px;
+
+.color-box-main{
+  @include makeColorBox(100%, 100px, $main-color);
+}
+.color-box-sub{
+  @include makeColorBox(100%, 100px, $sub-color);
+}
+.color-box-accent{
+  @include makeColorBox(100%, 100px, $accent-color);
 }

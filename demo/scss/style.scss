@@ -1,6 +1,7 @@
 @import "../../junkpot";
 
-@import "variables";
-@import "layout";
-@import "common";
-@import "pages/page";
+@import "_mixins";
+@import "_variables";
+@import "_layout";
+@import "_common";
+@import "pages/_page";

@@ -1,0 +1,6 @@
+@mixin makeColorBox($width, $height, $color){
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
