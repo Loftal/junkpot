@@ -1,8 +1,34 @@
-//@lineで指定した行数で折りたたみ
-@mixin line-wrap($line: 1){
+//$lineで指定した行数で折りたたみ(Chrome, Safariのみ)
+@mixin line-clamp($line: 1){
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line;
   text-overflow: ellipsis;
+}
+
+//
+@mixin ellipsis($font-size: 14px, $line-height: 1.5, $line:2, $bg-color: #fff){
+  position: relative;
+  overflow: hidden;
+  font-size: $font-size;
+  line-height: $line-height;
+  height: $font-size * $line-height * $line;
+  &:before,
+  &:after {
+    background-color: $bg-color;
+    position: absolute;
+  }
+  &:before {
+    content: "...";
+    top: $font-size * $line-height * ($line - 1);
+    right: 0;
+    width: $font-size;
+    text-align: center;
+  }
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+  }
 }

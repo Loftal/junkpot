@@ -24,3 +24,13 @@ a{
 .color-box-accent{
   @include makeColorBox(100%, 100px, $accent-color);
 }
+
+.long-text{
+  margin: 20px 0;
+  width: 50vw;
+  height: 100px;
+  background-color: #999;
+  .ellipsis{
+    @include ellipsis(18px, 1.5, 2, #999);
+  }
+}

@@ -296,4 +296,29 @@ a {
   height: 100px;
   background-color: #00F; }
 
+.long-text {
+  margin: 20px 0;
+  width: 50vw;
+  height: 100px;
+  background-color: #999; }
+  .long-text .ellipsis {
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+    height: 54px; }
+    .long-text .ellipsis:before, .long-text .ellipsis:after {
+      background-color: #999;
+      position: absolute; }
+    .long-text .ellipsis:before {
+      content: "...";
+      top: 27px;
+      right: 0;
+      width: 18px;
+      text-align: center; }
+    .long-text .ellipsis:after {
+      content: "";
+      height: 100%;
+      width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
