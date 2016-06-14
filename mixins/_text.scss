@@ -7,7 +7,7 @@
   text-overflow: ellipsis;
 }
 
-//
+// 複数行折りたたみ（クロスブラウザ対応）
 @mixin ellipsis($font-size: 14px, $line-height: 1.5, $line:2, $bg-color: #fff){
   position: relative;
   overflow: hidden;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Junkpot Demo</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div id="navbar">
+        <div class="container">
+            navbar
+        </div>
+    </div>
+    <div class="container">
+        <h1>header</h1>
+    </div>
+</div>
+<div id="contents">
+    <div class="container">
+        <h2 class="main">Hamburger Menu</h2>
+
+        <div id="hamburger">
+
+            <div class="normal">
+                <a class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="rotate">
+                <a class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="fusion">
+                <a class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div>
+                参考：<a href="http://www.nxworld.net/tips/12-css-hamburger-menu-active-effect.html" target="_blank">http://www.nxworld.net/tips/12-css-hamburger-menu-active-effect.html</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        footer
+    </div>
+</div>
+<script>
+    $(function(){
+        $('.hamburger-menu').click(function(){
+            $(this).toggleClass('active');
+            return false;
+        });
+    })
+</script>
+</body>
+</html>

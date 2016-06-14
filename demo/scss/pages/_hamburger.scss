@@ -1,0 +1,17 @@
+#hamburger{
+  >div{
+    margin: 0 0 30px;
+  }
+  .normal{
+    @include base-hamburger(normal);
+  }
+
+  .rotate{
+    @include base-hamburger(rotate, 30px, 9px, 3px);
+  }
+
+  .fusion{
+    @include base-hamburger(fusion);
+  }
+
+}
