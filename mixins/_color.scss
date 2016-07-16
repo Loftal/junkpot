@@ -1,0 +1,8 @@
+// $per: 100%で白になるように調整
+@function lightenRelative($color, $per){
+  @return lighten($color, (100 - lightness($color))*($per/100.0%));
+}
+// $per: 100%で黒になるように調整
+@function darkenRelative($color, $per){
+  @return darken($color, lightness($color)*($per/100.0%));
+}

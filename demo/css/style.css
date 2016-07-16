@@ -278,6 +278,12 @@ a {
 .accent {
   color: #00F; }
 
+.main-lighten {
+  color: #ff3333; }
+
+.main-darken {
+  color: #cc0000; }
+
 .color-box-main {
   display: block;
   width: 100%;

@@ -15,6 +15,13 @@ a{
   color: $accent-color;
 }
 
+.main-lighten{
+  color: lightenRelative($main-color, 20%);
+}
+.main-darken{
+  color: darkenRelative($main-color, 20%);
+}
+
 .color-box-main{
   @include makeColorBox(100%, 100px, $main-color);
 }
